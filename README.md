@@ -1,5 +1,3 @@
-### Hi there 👋
-
 ![image](https://user-images.githubusercontent.com/56094636/212572103-18b099c1-7da4-4a20-871f-ff5bb5999e60.png)
 
 <a href="https://twitter.com/neuroluebbert" ><img src="https://img.shields.io/twitter/follow/neuroluebbert.svg?style=social" /> </a>
