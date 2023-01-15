@@ -1,5 +1,9 @@
 ### Hi there 👋
 
+
+<a href="https://twitter.com/neuroluebbert" ><img src="https://img.shields.io/twitter/follow/neuroluebbert.svg?style=social" /> </a>
+[![Linkedin: lauraluebbert](https://img.shields.io/badge/-lauraluebbert-blue?style=round-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/thaianebraga/)](https://www.linkedin.com/in/lauraluebbert/)
+
 <!--
 **lauraluebbert/lauraluebbert** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
