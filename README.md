@@ -5,7 +5,8 @@
 
 ![image](https://user-images.githubusercontent.com/56094636/212572103-18b099c1-7da4-4a20-871f-ff5bb5999e60.png)
 
-Picture credit: https://hero.fandom.com/wiki/Scrat  
+<sub>Picture credit: https://hero.fandom.com/wiki/Scrat</sub>  
+  
 <a href="https://twitter.com/neuroluebbert" ><img src="https://img.shields.io/twitter/follow/neuroluebbert.svg?style=social" /> </a>
 [![Linkedin: lauraluebbert](https://img.shields.io/badge/-lauraluebbert-blue?style=round-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/thaianebraga/)](https://www.linkedin.com/in/lauraluebbert/)  
 <!--
