@@ -1,14 +1,6 @@
-&nbsp;  
-&nbsp;   
-&nbsp;  
-&nbsp;  
+[![Twitter](https://img.shields.io/twitter/url/https/twitter.com/neuroluebbert.svg?style=social&label=NeuroLuebbert)](https://twitter.com/neuroluebbert)
+[![Linkedin: LauraLuebbert](https://img.shields.io/badge/-LauraLuebbert-blue?style=round-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/LauraLuebbert/)](https://www.linkedin.com/in/LauraLuebbert/)  
 
-![image](https://user-images.githubusercontent.com/56094636/212572103-18b099c1-7da4-4a20-871f-ff5bb5999e60.png)
-
-<sub>Picture credit: https://hero.fandom.com/wiki/Scrat</sub>  
-  
-<a href="https://twitter.com/neuroluebbert" ><img src="https://img.shields.io/twitter/follow/neuroluebbert.svg?style=social" /> </a>
-[![Linkedin: lauraluebbert](https://img.shields.io/badge/-lauraluebbert-blue?style=round-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/thaianebraga/)](https://www.linkedin.com/in/lauraluebbert/)  
 <!--
 **lauraluebbert/lauraluebbert** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
