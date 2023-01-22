@@ -116,14 +116,14 @@ def plot_gget_user(property_id):
 
     # Plot world
     world.plot(
-        column=col, ax=ax, edgecolor="lightgrey", linewidth=0.5, cmap=cmap, norm=norm
+        column=col, ax=ax, edgecolor="grey", linewidth=0.5, cmap=cmap, norm=norm
     )
 
     # Add colormap legend
     cbaxes = fig.add_axes([0.15, 0.25, 0.01, 0.4])
     cbar = fig.colorbar(matplotlib.cm.ScalarMappable(norm=norm, cmap=cmap), cax=cbaxes)
-    cbar.set_label(label="Number of active users", size=fontsize, labelpad=-65)
-    cbar.ax.tick_params(labelsize=fontsize - 2)
+    cbar.set_label(label="Number of active users", size=fontsize, labelpad=-65, c="grey")
+    cbar.ax.tick_params(which="both", labelsize=fontsize - 2, color="grey", labelcolor="grey")
 
 #     # Uncomment if you want to add country name labels
 #     # Label all countries where user count > 0
