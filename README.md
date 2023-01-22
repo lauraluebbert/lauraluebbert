@@ -1,3 +1,11 @@
+<h2 align="center">Locations of active users of the <a href="pachterlab.github.io/gget">gget website</a> in the last 30 days</h2>
+
+![alt text](https://github.com/lauraluebbert/lauraluebbert/raw/main/gget_user_map.png)
+
+<p align="center">
+Map automatically updates every day at 16:00 UTC.<br>
+</p>
+
 [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/neuroluebbert.svg?style=social&label=NeuroLuebbert)](https://twitter.com/neuroluebbert)
 [![Linkedin: LauraLuebbert](https://img.shields.io/badge/-LauraLuebbert-blue?style=round-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/LauraLuebbert/)](https://www.linkedin.com/in/LauraLuebbert/)  
 
