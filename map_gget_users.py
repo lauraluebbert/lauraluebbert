@@ -49,15 +49,10 @@ def sample_run_report(
     return response
 
 
-def get_GA_data(property_id, ga_creds):
+def get_GA_data(property_id):
     """
     Wrapper function to fetch and clean up data returned by the sample_run_report function.
     """
-    # Save GA credentials dictionary to json and set as environment variable
-    with open("ga_creds.json", "w") as outfile:
-        json.dump(ga_creds, outfile)
-
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "ga_creds.json"
 
     response = sample_run_report(property_id)
 
@@ -71,21 +66,16 @@ def get_GA_data(property_id, ga_creds):
     df["country"] = countries
     df["user_count"] = counts
 
-    # Delete GA credentials environment variable
-    del os.environ["GOOGLE_APPLICATION_CREDENTIALS"]
-    # Delete GA creds json
-    os.remove("ga_creds.json")
-
     return df
 
 
-def plot_gget_user(property_id, ga_creds):
+def plot_gget_user(property_id):
     """
     Plot number of visitors to the gget visitors during the last 30 days
     by country.
     """
     # Get latest data from gget GA property
-    df = get_GA_data(property_id, ga_creds)
+    df = get_GA_data(property_id)
 
     # Load world dataframe
     world = geopandas.read_file(geopandas.datasets.get_path("naturalearth_lowres"))
@@ -149,6 +139,14 @@ def plot_gget_user(property_id, ga_creds):
 
 
 if __name__ == "__main__" :
-    print(sys.argv[1])
-    print(sys.argv[2])
-    plot_gget_user(property_id=sys.argv[1], ga_creds=sys.argv[2])
+#     # Save GA credentials dictionary to json and set as environment variable
+#     with open("ga_creds.json", "w") as outfile:
+#         json.dump(ga_creds, outfile)
+#     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "ga_creds.json"
+    
+    plot_gget_user(property_id=sys.argv[1])
+    
+#     # Delete GA credentials environment variable
+#     del os.environ["GOOGLE_APPLICATION_CREDENTIALS"]
+#     # Delete GA creds json
+#     os.remove("ga_creds.json")
