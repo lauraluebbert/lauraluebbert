@@ -1,4 +1,4 @@
-<h2 align="center">Locations of active users of the <a href="pachterlab.github.io/gget">gget website</a> in the last 30 days</h2>
+<h2 align="center">Active users of the <a href="pachterlab.github.io/gget">gget website</a> in the last 30 days by country</h2>
 
 ![alt text](https://github.com/lauraluebbert/lauraluebbert/raw/main/gget_user_map.png)
 
