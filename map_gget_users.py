@@ -56,6 +56,8 @@ def get_GA_data(property_id, ga_creds):
     # Save GA credentials dictionary to json and set as environment variable
     with open("ga_creds.json", "w") as outfile:
         json.dump(ga_creds, outfile)
+        
+    print(ga_creds)
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "ga_creds.json"
 
     response = sample_run_report(property_id)
