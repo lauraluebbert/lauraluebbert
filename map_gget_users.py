@@ -6,6 +6,7 @@
 import os
 import sys
 import json
+from cryptography.fernet import Fernet
 from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import (
     DateRange,
@@ -139,14 +140,22 @@ def plot_gget_user(property_id):
 
 
 if __name__ == "__main__" :
-#     # Save GA credentials dictionary to json and set as environment variable
-#     with open("ga_creds.json", "w") as outfile:
-#         json.dump(ga_creds, outfile)
-#     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "ga_creds.json"
+    key = sys.argv[2]
+    fernet = Fernet(key)
+
+    with open("ga_creds_encrypted.json","rb") as file:
+        ga_creds_encrypted = file.read()
+
+    ga_creds = fernet.decrypt(ga_creds_encrypted)
+
+    with open("ga_creds.json", "w") as outfile:
+        json.dump(json.loads(ga_creds.decode("utf-8")), outfile)
+    
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "ga_creds.json"
     
     plot_gget_user(property_id=sys.argv[1])
     
-#     # Delete GA credentials environment variable
-#     del os.environ["GOOGLE_APPLICATION_CREDENTIALS"]
-#     # Delete GA creds json
-#     os.remove("ga_creds.json")
+    # Delete GA credentials environment variable
+    del os.environ["GOOGLE_APPLICATION_CREDENTIALS"]
+    # Delete GA creds json
+    os.remove("ga_creds.json")
