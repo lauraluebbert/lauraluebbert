@@ -32,9 +32,7 @@ jobs:
           python -m pip install -r requirements.txt
           
       - name: Execute Python code
-        env: 
-          GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GA_CREDENTIALS }}
-        run: python map_gget_users.py ${{ secrets.GGET_PROPERTY_ID }}
+        run: python map_gget_users.py ${{ secrets.GGET_PROPERTY_ID }} ${{ secrets.FERNET_KEY }}
       
       - name: Commit and push new plot
         run: |-
