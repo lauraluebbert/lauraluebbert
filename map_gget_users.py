@@ -140,6 +140,7 @@ def plot_gget_user(property_id):
 
 
 if __name__ == "__main__" :
+    # Decrypt GA credentials
     key = sys.argv[2]
     fernet = Fernet(key)
 
@@ -151,8 +152,10 @@ if __name__ == "__main__" :
     with open("ga_creds.json", "w") as outfile:
         json.dump(json.loads(ga_creds.decode("utf-8")), outfile)
     
+    # Set path to GA credential as environment variable
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "ga_creds.json"
     
+    # Generate user per country heatmap world
     plot_gget_user(property_id=sys.argv[1])
     
     # Delete GA credentials environment variable
