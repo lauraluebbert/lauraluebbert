@@ -1,0 +1,5 @@
+google-analytics-data==0.16.0
+country-converter==0.8.0
+geopandas==0.12.2
+matplotlib
+pandas
