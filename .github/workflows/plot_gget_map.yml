@@ -2,9 +2,6 @@ name: plot_gget_map
 on:
   schedule:
     - cron: "0 16 * * *"
-  push:
-    branches:
-    - main
 
 jobs:
   build:
