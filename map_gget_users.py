@@ -36,7 +36,7 @@ def sample_run_report(
 
     # Using a default constructor instructs the client to use the credentials
     # specified in GOOGLE_APPLICATION_CREDENTIALS environment variable
-    client = BetaAnalyticsDataClient().from_service_account_json('ga_creds.json')
+    client = BetaAnalyticsDataClient()
 
     request = RunReportRequest(
         property=f"properties/{property_id}",
@@ -56,8 +56,8 @@ def get_GA_data(property_id, ga_creds):
     # Save GA credentials dictionary to json and set as environment variable
     with open("ga_creds.json", "w") as outfile:
         json.dump(ga_creds, outfile)
-        
-    print(ga_creds)
+
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "ga_creds.json"
 
     response = sample_run_report(property_id)
 
@@ -71,6 +71,8 @@ def get_GA_data(property_id, ga_creds):
     df["country"] = countries
     df["user_count"] = counts
 
+    # Delete GA credentials environment variable
+    del os.environ["GOOGLE_APPLICATION_CREDENTIALS"]
     # Delete GA creds json
     os.remove("ga_creds.json")
 
@@ -147,4 +149,6 @@ def plot_gget_user(property_id, ga_creds):
 
 
 if __name__ == "__main__" :
+    print(sys.argv[1])
+    print(sys.argv[2])
     plot_gget_user(property_id=sys.argv[1], ga_creds=sys.argv[2])
