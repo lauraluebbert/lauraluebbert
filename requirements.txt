@@ -3,3 +3,4 @@ country-converter==0.8.0
 geopandas==0.12.2
 matplotlib
 pandas
+cryptography==39.0.0
