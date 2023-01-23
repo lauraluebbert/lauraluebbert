@@ -1,4 +1,9 @@
-<h2 align="center">Active users of the <a href="www.pachterlab.github.io/gget">gget website</a> in the last 30 days by country</h2>
+<h2 align="center">
+  <a href="https://github.com/pachterlab/gget">gget</a> has gone worldwide! 🌎<br>
+</h2>
+<h3 align="center">
+  Active users of the <a href="https://pachterlab.github.io/gget">gget website</a> in the last 30 days by country
+</h3>
 
 ![alt text](https://github.com/lauraluebbert/lauraluebbert/raw/main/gget_user_map.png)
 
