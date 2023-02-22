@@ -27,12 +27,15 @@ def sample_run_report(
     property_id,
     datatype="activeUsers",
     dimension="country",
-    start_date="yesterday",
+    start_date="2daysAgo",
     end_date="today",
 ):
     """
     Returns the number of [datatype] per [dimension] from [start_date] to [end_date]
     from a Google Analytics 4 property (defined by [property_id]).
+    
+    Possible values for start_date/end_date: 365daysAgo, 30daysAgo, 7daysAgo, 2daysAgo, yesterday, today
+    (Alternatively: specify date, e.g. 2020-08-01)
     """
 
     # Using a default constructor instructs the client to use the credentials
