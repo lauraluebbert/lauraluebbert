@@ -12,7 +12,7 @@ Map automatically updates every day at 16:00 UTC.
 </p>
 
 Programs used to generate this map:<br>
-I am using the <a href="https://developers.google.com/analytics/devguides/reporting/data/v1">Google Analytics 4 API v1 (Beta)</a> to query the gget website traffic (creds encrypted with <a href="https://github.com/pyca/cryptography">cryptography</a>), followed by <a href="https://geopandas.org/en/stable/">geopandas</a> and <a href="https://matplotlib.org/">matplotlib</a> to generate the plot. I automated the workflow using the one and only <a href="https://github.com/features/actions">GitHub Actions</a>.<br>
+I am using the <a href="https://developers.google.com/analytics/devguides/reporting/data/v1">Google Analytics 4 API v1 (Beta)</a> to query the gget website traffic (creds encrypted with <a href="https://github.com/pyca/cryptography">cryptography</a>), followed by <a href="https://geopandas.org/en/stable/">geopandas</a> and <a href="https://matplotlib.org/">matplotlib</a> to generate the plot. I automated the workflow using <a href="https://github.com/features/actions">GitHub Actions</a>.<br>
    
 [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/neuroluebbert.svg?style=social&label=NeuroLuebbert)](https://twitter.com/neuroluebbert)
 [![Linkedin: LauraLuebbert](https://img.shields.io/badge/-LauraLuebbert-blue?style=round-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/LauraLuebbert/)](https://www.linkedin.com/in/LauraLuebbert/)  
