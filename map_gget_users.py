@@ -1,5 +1,6 @@
 # References:
 # https://developers.google.com/analytics/devguides/reporting/data/v1/quickstart-client-libraries
+# https://developers.google.com/analytics/devguides/reporting/data/v1/api-schema
 # https://geopandas.org/en/stable/docs/user_guide/mapping.html
 
 # Packages to fetch data from GA instance
