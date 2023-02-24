@@ -108,8 +108,8 @@ def plot_gget_user(property_id):
     fig, ax = plt.subplots(1, figsize=(20, 10))
 
     fontsize = 15
-    col = "user_count"
     cmap = "OrRd"  # Alternative color maps: OrRd YlGn Greens YlOrRd
+    col = "user_count"
     vmax = world[col].max()
 
     # Remove the axes
@@ -118,10 +118,12 @@ def plot_gget_user(property_id):
     # Define normalization for colormap
     if vmax > 1 and vmax < 20:
         norm = matplotlib.colors.Normalize(1, vmax)
+        cmap.set_under(alpha=0)
     elif vmax >= 20:
         norm = matplotlib.colors.LogNorm(1, vmax)
     else:
         norm = matplotlib.colors.Normalize(1, 3)
+        cmap.set_under(alpha=0)
 
     # Plot world
     world.plot(
