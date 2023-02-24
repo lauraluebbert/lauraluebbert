@@ -18,6 +18,7 @@ from google.analytics.data_v1beta.types import (
 
 # Packages for plotting
 import pandas as pd
+import numpy as np
 import geopandas
 import country_converter as coco
 import matplotlib
