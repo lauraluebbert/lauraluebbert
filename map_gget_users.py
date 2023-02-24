@@ -117,13 +117,23 @@ def plot_gget_user(property_id):
 
     # Define normalization for colormap
     if vmax > 1 and vmax < 20:
-        norm = matplotlib.colors.Normalize(1, vmax)
-        cmap.set_under(alpha=0)
+        norm = matplotlib.colors.Normalize(0, vmax)
+        
+        #  Make 0 values transparent
+        cmap = matplotlib.colormaps[cmap]
+        trans = np.array([0/256, 0/256, 0/256, 0])
+        cmap[0, :] = trans
+
     elif vmax >= 20:
         norm = matplotlib.colors.LogNorm(1, vmax)
     else:
-        norm = matplotlib.colors.Normalize(1, 3)
-        cmap.set_under(alpha=0)
+        norm = matplotlib.colors.Normalize(0, 3)
+        
+        #  Make 0 values transparent
+        cmap = matplotlib.colormaps[cmap]
+        trans = np.array([0/256, 0/256, 0/256, 0])
+        cmap[0, :] = trans
+
 
     # Plot world
     world.plot(
