@@ -23,6 +23,7 @@ import geopandas
 import country_converter as coco
 import matplotlib
 import matplotlib.pyplot as plt
+from matplotlib.colors import ListedColormap
 
 
 def sample_run_report(
@@ -121,9 +122,11 @@ def plot_gget_user(property_id):
         norm = matplotlib.colors.Normalize(0, vmax)
         
         #  Make 0 values transparent
-        cmap = matplotlib.colormaps[cmap]
+        colormap = matplotlib.colormaps[cmap].resampled(256)
+        new_cmap = colormap(np.linspace(0, 1, 256))
         trans = np.array([0/256, 0/256, 0/256, 0])
-        cmap[0, :] = trans
+        new_cmap[0, :] = trans
+        cmap = ListedColormap(new_cmap)
 
     elif vmax >= 20:
         norm = matplotlib.colors.LogNorm(1, vmax)
@@ -131,10 +134,11 @@ def plot_gget_user(property_id):
         norm = matplotlib.colors.Normalize(0, 3)
         
         #  Make 0 values transparent
-        cmap = matplotlib.colormaps[cmap]
+        colormap = matplotlib.colormaps[cmap].resampled(256)
+        new_cmap = colormap(np.linspace(0, 1, 256))
         trans = np.array([0/256, 0/256, 0/256, 0])
-        cmap[0, :] = trans
-
+        new_cmap[0, :] = trans
+        cmap = ListedColormap(new_cmap)
 
     # Plot world
     world.plot(
