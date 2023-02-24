@@ -116,8 +116,11 @@ def plot_gget_user(property_id):
     ax.axis("off")
 
     # Define normalization for colormap
-#     norm = matplotlib.colors.LogNorm(1, vmax)
-    norm = matplotlib.colors.Normalize(1, vmax)
+    if vmax > 1:
+#         norm = matplotlib.colors.LogNorm(1, vmax)
+        norm = matplotlib.colors.Normalize(1, vmax)
+    else:
+        norm = matplotlib.colors.Normalize(1, 3)
 
     # Plot world
     world.plot(
