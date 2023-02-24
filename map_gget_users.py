@@ -121,7 +121,7 @@ def plot_gget_user(property_id):
     if vmax > 1 and vmax < 20:
         norm = matplotlib.colors.Normalize(0, vmax)
         
-        #  Make 0 values transparent
+        #  Make 0 values transparent (LogNorm does this automatically)
         colormap = matplotlib.colormaps[cmap].resampled(256)
         new_cmap = colormap(np.linspace(0, 1, 256))
         trans = np.array([0/256, 0/256, 0/256, 0])
@@ -130,6 +130,7 @@ def plot_gget_user(property_id):
 
     elif vmax >= 20:
         norm = matplotlib.colors.LogNorm(1, vmax)
+        
     else:
         norm = matplotlib.colors.Normalize(0, 3)
         
