@@ -156,7 +156,7 @@ def plot_gget_user(property_id):
     # Uncomment for country name labels
     # Label all countries where user count > 0
     for idx, row in world[world["show_name"] == True].iterrows():
-        ax.annotate(row["name"], xy=row["coords"], horizontalalignment="center", color="grey")
+        ax.annotate(row["name"], xy=row["coords"], horizontalalignment="center", color="lightgrey")
 
 #     # Set figure title
 #     ax.set_title(
