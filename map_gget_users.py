@@ -112,6 +112,7 @@ def plot_gget_user(property_id):
     fontsize = 15
     cmap = "OrRd"  # Alternative color maps: OrRd YlGn Greens YlOrRd
     col = "user_count"
+    world[col] = world[col].astype(int)
     vmax = world[col].max()
 
     # Remove the axes
