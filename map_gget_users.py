@@ -153,10 +153,9 @@ def plot_gget_user(property_id):
     cbar.set_label(label="Number of active users", size=fontsize, labelpad=-65, c="grey")
     cbar.ax.tick_params(which="both", labelsize=fontsize - 2, color="grey", labelcolor="grey")
 
-    # Uncomment for country name labels
-    # Label all countries where user count > 0
-    for idx, row in world[world["show_name"] == True].iterrows():
-        ax.annotate(row["name"], xy=row["coords"], horizontalalignment="center", color="#58a5ff", weight="bold")
+#     # Label all countries where user count > 0
+#     for idx, row in world[world["show_name"] == True].iterrows():
+#         ax.annotate(row["name"], xy=row["coords"], horizontalalignment="center", color="#58a5ff", weight="bold")
 
 #     # Set figure title
 #     ax.set_title(
