@@ -36,8 +36,8 @@ jobs:
       
       - name: Commit and push new plot
         run: |-
-          git config user.name "lauraluebbert"
-          git config user.email "laura.lbt60@gmail.com"
+          git config user.name "Plot from CI"
+          git config user.email ""
           git status
           git add gget_user_map.png
           timestamp=$(date -u)
