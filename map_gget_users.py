@@ -110,10 +110,12 @@ def plot_gget_user(property_id):
     fig, ax = plt.subplots(1, figsize=(20, 10))
 
     fontsize = 15
-    cmap = "OrRd"  # Alternative color maps: OrRd YlGn Greens YlOrRd
+    # cmap = "OrRd"  # Alternative color maps: OrRd YlGn Greens YlOrRd
+    cmap="Blues"
     col = "user_count"
     world[col] = world[col].astype(int)
-    vmax = world[col].max()
+    # vmax = world[col].max()
+    vmax=1000
 
     # Remove the axes
     ax.axis("off")
