@@ -30,7 +30,7 @@ def sample_run_report(
     property_id,
     datatype="activeUsers",
     dimension="country",
-    start_date="yesterday",
+    start_date="2020-08-01",
     end_date="today",
 ):
     """
