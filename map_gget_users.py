@@ -113,8 +113,7 @@ def plot_gget_user(property_id):
     cmap = "OrRd"  # Alternative color maps: OrRd YlGn Greens YlOrRd
     col = "user_count"
     world[col] = world[col].astype(int)
-    # vmax = world[col].max()
-    vmax = 1000
+    vmax = world[col].max()
 
     # Remove the axes
     ax.axis("off")
