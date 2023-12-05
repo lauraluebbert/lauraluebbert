@@ -149,7 +149,7 @@ def plot_gget_user(property_id):
 
     # Add colormap legend
     cbaxes = fig.add_axes([0.15, 0.25, 0.01, 0.4])
-    cbar = fig.colorbar(matplotlib.cm.ScalarMappable(norm=norm, cmap=cmap), cax=cbaxes)
+    cbar = fig.colorbar(matplotlib.cm.ScalarMappable(norm=norm, cmap=cmap, vmax=1000), cax=cbaxes)
     cbar.set_label(label="Number of active users", size=fontsize, labelpad=-65, c="grey")
     cbar.ax.tick_params(which="both", labelsize=fontsize - 2, color="grey", labelcolor="grey")
 
