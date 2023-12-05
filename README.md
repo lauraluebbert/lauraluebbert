@@ -2,7 +2,7 @@
   <a href="https://github.com/pachterlab/gget">gget</a> has gone worldwide! 🌎<br>
 </h2>
 <h3 align="center">
-  Active users of the <a href="https://pachterlab.github.io/gget">gget website</a> since it went online by country
+  Active users of the <a href="https://pachterlab.github.io/gget">gget website</a> since its creation by country
 </h3>
 
 ![alt text](https://github.com/lauraluebbert/lauraluebbert/raw/main/gget_user_map.png)
