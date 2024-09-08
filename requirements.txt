@@ -1,6 +1,7 @@
 google-analytics-data==0.16.0
 country-converter==0.8.0
-geopandas==0.14.4
+geopandas==0.12.2
+fiona==1.9.6
 matplotlib
 pandas
 cryptography==42.0.4
